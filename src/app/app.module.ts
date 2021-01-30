@@ -11,10 +11,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 import { SessionsComponent } from './sessions/sessions.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ParticipantsComponent } from './participants/participants.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
+import { RechercherComponent } from './rechercher/rechercher.component';
+import { TrackTableComponent } from './dashboard/track-table/track-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { FormateurTableComponent } from './dashboard/formateur-table/formateur-table.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,10 @@ import { FormateursComponent } from './formateurs/formateurs.component';
     SessionsComponent,
     DashboardComponent,
     ParticipantsComponent,
-    FormateursComponent
+    FormateursComponent,
+    RechercherComponent,
+    TrackTableComponent,
+    FormateurTableComponent
   ],
   imports: [
     BrowserModule,
@@ -33,8 +43,12 @@ import { FormateursComponent } from './formateurs/formateurs.component';
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
+    MatCardModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

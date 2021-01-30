@@ -1,3 +1,11 @@
+.chercher{
+  height:33px;
+  width:400px;
+  color:black;
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+}
 .sidenav-container {
   height: 100%;
 }
@@ -15,12 +23,14 @@
 .mat-toolbar {
   height: 10%;
   background: inherit;
+  color:white;
 }
 .mat-nav-list a{
   height:75px;}
 
 .mat-list-item{
   border-bottom: 1px solid #dbd7f1;
+  color: white;
 }
 
 .mat-toolbar.mat-primary {
