@@ -5,13 +5,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ParticipantsComponent } from './participants/participants.component';
 import { FormateursComponent } from './formateurs/formateurs.component';
 import { RechercherComponent } from './rechercher/rechercher.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AdminComponent } from './admin/admin/admin.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
-  { path: 'sessions', component: SessionsComponent },
+  
   { path: 'formateurs', component: FormateursComponent },
   { path: 'participants', component: ParticipantsComponent },
-  { path: 'rechercher_session', component: RechercherComponent}
+  { path: 'rechercher_session', component: RechercherComponent},
+  {path: 'admin', component: AdminComponent },
+ {path: './list', component:FormateursComponent}
 
 ];
 
